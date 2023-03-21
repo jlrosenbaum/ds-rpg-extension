@@ -1,0 +1,34 @@
+{
+    "id": "ds-rpg-extension",
+    "title": "Dark Souls RPG extension for 5e",
+    "authors":[
+        {
+            "name": "Korpseman"
+        }
+    ],
+    "esmodules": [
+		"./scripts/dsrpg-sheet.js",
+		"./scripts/dsrpg-npc.js",
+		"./scripts/dsrpg-vehicle.js",
+		"./scripts/dsrpg-item.js",
+		"./scripts/app/dsrpg-exhaustion.js",
+		"./scripts/app/dsrpg-lazy-money.js",
+		"./scripts/app/settings.js",
+		"./scripts/app/context-menu.js",
+		"./scripts/app/dsrpg-hb-upcast-free-spell.js"
+	],
+	"styles": ["./css/dsrpg-icons.css", "./css/dsrpg.css", "./css/dsrpg-dark.css"],
+    "version": "1.0.0",
+    "relationships": {
+		"systems": [
+			{
+				"id": "dnd5e",
+				"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+				"compatibility": {
+					"minimum": "2.1.2",
+					"verified": "2.1.2"
+				}
+			}
+		]
+    }
+}
