@@ -1,0 +1,10 @@
+<div class="form-group">
+	<label>{{ localize "DSRPG.SpellClass" }}</label>
+	<select name="flags.dsrpg-sheet.parentClass">
+		{{#select flags.dsrpg-sheet.parentClass}}
+		<option value="">---</option>
+		{{#each SCF as |name key|}}
+		<option value="{{key}}">{{ localize name}}</option>
+		{{/each}} {{/select}}
+	</select>
+</div>

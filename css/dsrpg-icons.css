@@ -1,0 +1,158 @@
+@font-face {
+	font-family: "dsrpg-icons";
+	src: url("../fonts/dsrpg-icons.eot?hzg6v1");
+	src: url("../fonts/dsrpg-icons.eot?hzg6v1#iefix") format("embedded-opentype"),
+		url("../fonts/dsrpg-icons.ttf?hzg6v1") format("truetype"), url("../fonts/dsrpg-icons.woff2?hzg6v1") format("woff"),
+		url("../fonts/dsrpg-icons.woff?hzg6v1") format("woff"),
+		url("../fonts/dsrpg-icons.svg?hzg6v1#dsrpg-icons") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+.ds {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "dsrpg-icons" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ds-ally:before {
+	content: "\e900";
+}
+
+.ds-circle:before {
+	content: "\e901";
+}
+
+.ds-cone:before {
+	content: "\e902";
+}
+
+.ds-creature:before {
+	content: "\e903";
+}
+
+.ds-cube:before {
+	content: "\e904";
+}
+
+.ds-cylinder:before {
+	content: "\e905";
+}
+
+.ds-enemy:before {
+	content: "\e906";
+}
+
+.ds-line:before {
+	content: "\e907";
+}
+
+.ds-object:before {
+	content: "\e908";
+}
+
+.ds-radius:before {
+	content: "\e909";
+}
+
+.ds-self:before {
+	content: "\e90a";
+}
+
+.ds-space:before {
+	content: "\e90b";
+}
+
+.ds-sphere:before {
+	content: "\e90c";
+}
+
+.ds-square:before {
+	content: "\e90d";
+}
+
+.ds-touch:before {
+	content: "\e90e";
+}
+
+.ds-wall:before {
+	content: "\e90f";
+}
+
+.ds-acid:before {
+	content: "\e910";
+}
+
+.ds-bludgeoning:before {
+	content: "\e911";
+}
+
+.ds-cold:before {
+	content: "\e912";
+}
+
+.ds-fire:before {
+	content: "\e913";
+}
+
+.ds-fire_alt:before {
+	content: "\e914";
+}
+
+.ds-force:before {
+	content: "\e915";
+}
+
+.ds-force_alt:before {
+	content: "\e916";
+}
+
+.ds-healing:before {
+	content: "\e917";
+}
+
+.ds-lightning:before {
+	content: "\e918";
+}
+
+.ds-necrotic:before {
+	content: "\e919";
+}
+
+.ds-necrotic_alt:before {
+	content: "\e91a";
+}
+
+.ds-piercing:before {
+	content: "\e91b";
+}
+
+.ds-poison:before {
+	content: "\e91c";
+}
+
+.ds-psychic:before {
+	content: "\e91d";
+}
+
+.ds-radiant:before {
+	content: "\e91e";
+}
+
+.ds-slashing:before {
+	content: "\e91f";
+}
+
+.ds-thunder:before {
+	content: "\e920";
+}
