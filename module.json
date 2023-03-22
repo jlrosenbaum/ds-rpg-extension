@@ -35,5 +35,7 @@
 				}
 			}
 		]
-    }
+    },
+	"url": "https://github.com/jlrosenbaum/ds-rpg-extension",
+ 	"manifest": "https://github.com/jlrosenbaum/ds-rpg-extension/blob/master/module.json"
 }

@@ -1,5 +1,5 @@
 const CONSTANTS = {
-	MODULE_ID: `dsrpg-sheet`
+	MODULE_ID: `ds-rpg-extension`
 };
-CONSTANTS.PATH = `./${CONSTANTS.ID}/`;
+CONSTANTS.PATH = `.${CONSTANTS.ID}`;
 export default CONSTANTS;

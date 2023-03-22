@@ -39,7 +39,7 @@
 	--ds-color-hover-bg: rgba(20, 20, 20, 1);
 }
 
-.dsrpgDark .dsrpg.sheet.actor .dsrpg-sheet {
+.dsrpgDark .dsrpg.sheet.actor .ds-rpg-extension {
 	background-color: var(--ds-background);
 }
 .dsrpgDark .dsrpg.sheet.actor .spellcasting-ability {

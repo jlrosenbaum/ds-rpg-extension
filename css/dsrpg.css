@@ -121,7 +121,7 @@
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
-.dsrpg.sheet.actor .dsrpg-sheet {
+.dsrpg.sheet.actor .ds-rpg-extension {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -135,7 +135,7 @@
 	height: 100%;
 	overflow: hidden;
 }
-.dsrpg.sheet.actor .dsrpg-sheet .notice {
+.dsrpg.sheet.actor .ds-rpg-extension .notice {
 	display: block;
 	background: var(--ds-warning-accent);
 	padding: 10px;
