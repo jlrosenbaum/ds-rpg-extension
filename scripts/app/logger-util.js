@@ -3,7 +3,7 @@ import CONSTANTS from "./constants.js"
 // ================================
 // Logger utility
 // ================================
-// export let debugEnabled = 0;
+export let debugEnabled = 0;
 // 0 = none, warnings = 1, debug = 2, all = 3
 export function debug(msg, args = "") {
 	if (game.settings.get(CONSTANTS.MODULE_ID, "debug")) {
@@ -24,11 +24,6 @@ export function log(message, args = "") {
 	}
 	return message;
 }
-// export function log(message) {
-//   message = `${CONSTANTS.MODULE_ID} | ${message}`;
-//   console.log(message.replace('<br>', '\n'));
-//   return message;
-// }
 export function notify(message) {
 	message = `${CONSTANTS.MODULE_ID} | ${message}`;
 	ui.notifications?.notify(message);

@@ -140,7 +140,7 @@
 		"name": "Tidy Sheet Settings",
 		"hint": "Customize your own version of Tidy",
 		"label": "Sheet Settings",
-		"title": "Tidy5e Sheet Settings"
+		"title": "DSRPG Sheet Settings"
 	},
 	"DSRPG.Settings.TabPlayers": {
 		"tabLabel": "Players",
@@ -203,8 +203,8 @@
 	},
 
 	"DSRPG.Settings.SheetTheme": {
-		"name": "Tidy5e color theme.",
-		"hint": "Use either the default light or alternate dark color theme of Tidy5e.",
+		"name": "DSRPG color theme.",
+		"hint": "Use either the default light or alternate dark color theme of DSRPG.",
 		"default": "Default (light)",
 		"dark": "Alternate (dark)"
 	},
@@ -341,14 +341,14 @@
 		"name": "Auto Exhaustion effects.",
 		"hint": "Choose how to apply exhaustion effects corresponding to tiers (requires midiQol for disadvantage rolls)",
 		"default": "No automatic exhaustion effects",
-		"tidy5e": "Tidy5e - Apply integrated effects (uses Active Effects)",
+		"dsrpg": "DSRPG - Apply integrated effects (uses Active Effects)",
 		"dfredce": "DFreds Convenient Effects - Use your own effects",
 		"cub": "CUB - Use your own effects",
 		"custom": "Custom - Use your own effects (requires CUB)"
 	},
 	"DSRPG.Settings.CustomExhaustionIcon": {
 		"name": "Custom exhaustion effect icon.",
-		"hint": "Set your custom exhaustion effect icon by providing an image url. Only available when Exhaustion Effect is set to \"tidy 5e\" (e. g.: modules/tidy5e-sheet/images/exhaustion.svg)."
+		"hint": "Set your custom exhaustion effect icon by providing an image url. Only available when Exhaustion Effect is set to \"tidy 5e\" (e. g.: modules/ds-rpg-extension/images/exhaustion.svg)."
 	},
 	"DSRPG.Settings.CustomExhaustionEffect": {
 		"name": "Custom CUB exhaustion effect name.",
