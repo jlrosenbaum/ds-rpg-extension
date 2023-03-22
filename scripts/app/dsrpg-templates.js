@@ -23,3 +23,4 @@ export const preloadDSRPGHandlebarsTemplates = async function () {
 
 	// Load the template parts
 	return loadTemplates(dsrpgtemplatePaths);
+}

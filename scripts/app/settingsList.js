@@ -1,7 +1,7 @@
 import { RGBAToHexAFromColor } from "./color-picker.js";
 import CONSTANTS from "./constants.js";
 import { log } from "./logger-util.js";
-import { Tidy5eUserSettings } from "./settings.js";
+import { DSRPGUserSettings } from "./settings.js";
 
 export function settingsList() {
 	// General Settings
@@ -10,7 +10,7 @@ export function settingsList() {
 		label: "DSRPG.Settings.SheetMenu.label",
 		hint: `DSRPG.Settings.SheetMenu.hint`,
 		icon: "fas fa-cog",
-		type: Tidy5eUserSettings,
+		type: DSRPGUserSettings,
 		restricted: false
 	});
 
