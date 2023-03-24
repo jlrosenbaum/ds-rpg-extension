@@ -403,7 +403,7 @@ const _getItemContextOptions = function (item) {
 
 		// TODO commented waiting for this PR https://github.com/KageJittai/lets-trade-5e/pulls
 		// if(game.modules.get("lets-trade-5e")?.active) {
-		//   if(!['feat','background','class','subclass','spell'].includes(item.type)) {
+		//   if(!['feat','backstory','class','subclass','spell'].includes(item.type)) {
 		//     options.push({
 		//         name: `${game.i18n.localize("LetsTrade5E.Send")}`,
 		//         icon: `<i class="fas fa-balance-scale-right"></i>`,
@@ -425,7 +425,7 @@ const _getItemContextOptions = function (item) {
     {
       name: "DND5E.ContextMenuActionDuplicate",
       icon: "<i class='fas fa-copy fa-fw'></i>",
-      condition: () => !["race", "background", "class", "subclass"].includes(item.type),
+      condition: () => !["drive", "backstory", "class", "subclass"].includes(item.type),
       callback: () => item.clone({name: game.i18n.format("DOCUMENT.CopyOf", {name: item.name})}, {save: true})
     },
     {
@@ -446,7 +446,7 @@ const _getItemContextOptions = function (item) {
 			options.push({
 				name: "DND5E.ContextMenuActionDuplicate",
 				icon: "<i class='fas fa-copy fa-fw'></i>",
-				condition: () => !["race", "background", "class", "subclass"].includes(item.type),
+				condition: () => !["drive", "backstory", "class", "subclass"].includes(item.type),
 				callback: () =>
 					item.clone({ name: game.i18n.format("DOCUMENT.CopyOf", { name: item.name }) }, { save: true })
 			});
@@ -467,7 +467,7 @@ const _getItemContextOptions = function (item) {
 			options.push({
 				name: "DND5E.ContextMenuActionDuplicate",
 				icon: "<i class='fas fa-copy fa-fw'></i>",
-				condition: () => !["race", "background", "class", "subclass"].includes(item.type),
+				condition: () => !["drive", "backstory", "class", "subclass"].includes(item.type),
 				callback: () =>
 					item.clone({ name: game.i18n.format("DOCUMENT.CopyOf", { name: item.name }) }, { save: true })
 			});

@@ -110,9 +110,9 @@ export async function applySpellClassFilterActorSheet(app, html, actorData) {
 				if (itemSCFlags) {
 					if (classes.hasOwnProperty(itemSCFlags.parentClass)) {
 						// spellClassFilter.log(false, $(this))
-						// $(this).css('background-image', 'url('+classes[itemSCFlags.parentClass]+')')
+						// $(this).css('backstory-image', 'url('+classes[itemSCFlags.parentClass]+')')
 						let imgdiv = $(this).find(".item-image");
-						imgdiv.css("background-image", `url(${classes[itemSCFlags.parentClass]})`);
+						imgdiv.css("backstory-image", `url(${classes[itemSCFlags.parentClass]})`);
 					}
 				}
 			}

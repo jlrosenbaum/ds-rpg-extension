@@ -40,8 +40,8 @@ export default class DSRPGActorOriginSummaryConfig extends DSRPGBaseConfigSheet 
 	/** @inheritdoc */
 	getData(options) {
 		return {
-			race: this.clone.system.details.race,
-			background: this.clone.system.details.background,
+			drive: this.clone.system.details.drive,
+			backstory: this.clone.system.details.backstory,
 			environment: this.clone.system.details.environment,
 			alignment: this.clone.system.details.alignment,
 			source: this.clone.system.details.source,
@@ -64,8 +64,8 @@ export default class DSRPGActorOriginSummaryConfig extends DSRPGBaseConfigSheet 
 
 	/** @inheritdoc */
 	async _updateObject(event, formData) {
-		const race = foundry.utils.expandObject(formData).race;
-		const background = foundry.utils.expandObject(formData).background;
+		const drive = foundry.utils.expandObject(formData).drive;
+		const backstory = foundry.utils.expandObject(formData).backstory;
 		const environment = foundry.utils.expandObject(formData).environment;
 		const alignment = foundry.utils.expandObject(formData).alignment;
 		const source = foundry.utils.expandObject(formData).source;
@@ -78,14 +78,14 @@ export default class DSRPGActorOriginSummaryConfig extends DSRPGBaseConfigSheet 
 
 		if (isCharacter) {
 			// this.clone.updateSource({
-			//   "system.details.race": race,
-			//   "system.details.background": background,
+			//   "system.details.drive": drive,
+			//   "system.details.backstory": backstory,
 			//   "system.details.alignment": alignment
 			// });
 
 			return this.document.update({
-				"system.details.race": race,
-				"system.details.background": background,
+				"system.details.drive": drive,
+				"system.details.backstory": backstory,
 				"system.details.alignment": alignment
 			});
 		} else if (isNPC) {

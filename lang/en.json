@@ -123,6 +123,8 @@
 	"DSRPG.ClassWizard": "Wizard",
 
 	"DSRPG.OriginSummaryConfig": "Origin Summary Configuration",
+	"DSRPG.Origin": "Origin",
+	"DSRPG.Drive": "Drive",
 
     "DSRPG.LevelBump": "Level Bump",
     "DSRPG.LevelBumpTooltip": "When you are casting a spell you can cast it one level higher for free.",

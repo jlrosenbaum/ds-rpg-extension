@@ -94,12 +94,12 @@ export const dsrpgListeners = function (html, actor, app) {
 	// html.on("click", "[data-action='duplicate']", app._onItemDuplicate.bind(app));
 	html.on("click", "[data-action='itemDuplicate']", app._onItemDuplicate.bind(app));
 
-	html.find(".hit-points-tidy").click(() => {
+	html.find(".hit-points-dsrpg").click(() => {
 		let app = new DSRPGActorHitPointsConfig(actor);
 		app?.render(true);
 	});
 
-	html.find(".origin-summary-tidy").click(() => {
+	html.find(".origin-summary-dsrpg").click(() => {
 		let app = new DSRPGActorOriginSummaryConfig(actor);
 		app?.render(true);
 	});

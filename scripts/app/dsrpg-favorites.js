@@ -69,7 +69,7 @@ export const addFavorites = async function (app, html, data, position) {
 		inventory: favs.filter((i) =>
 			["weapon", "equipment", "consumable", "tool", "backpack", "loot"].includes(i.type)
 		),
-		features: favs.filter((i) => ["feat", "background", "class", "subclass"].includes(i.type)),
+		features: favs.filter((i) => ["feat", "backstory", "class", "subclass"].includes(i.type)),
 		spells: app._prepareSpellbook(
 			{ actor: app.actor },
 			favs.filter((i) => i.type === "spell")

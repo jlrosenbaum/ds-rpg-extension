@@ -3,7 +3,7 @@
 
 		{{!-- Item Info Card --}}
 		<section id="item-info-container">
-			<i class="item-info-container-background fab fa-d-and-d"></i>
+			<i class="item-info-container-backstory fab fa-d-and-d"></i>
 			<div class="info-wrap">
 				<article id="item-info-container-content">
 					<!-- Info Card here -->
@@ -49,7 +49,7 @@
 
 					{{!-- HP Overlay --}}
 					<div class="hp-overlay-wrapper" data-border="0px">
-						<div class="hp-overlay" style="background: linear-gradient(
+						<div class="hp-overlay" style="backstory: linear-gradient(
 								0deg,
 								rgba(255, 0, 0, 1) 0%,
 								rgba(255, 0, 0, 1) calc(100% - {{hpOverlayCalculationCurrent}}),
@@ -109,7 +109,7 @@
 
 					{{!-- Hit Points --}}
 					<div class="portrait-hp" title="{{ localize 'DND5E.HitPoints' }}">
-						<div class="hp-bar" style="background: linear-gradient(
+						<div class="hp-bar" style="backstory: linear-gradient(
 								-90deg,
 								transparent 0%,
 								transparent calc(100% - {{hpBarCalculationCurrent}}),
@@ -199,8 +199,8 @@
 								</ul>
 							</li>
 						</ul>
-                        <span class="origin-summary-text" data-tooltip="{{system.details.race}}" data-placeholder="{{ localize 'DND5E.Race' }}">{{system.details.race}}</span>
-						<span class="origin-summary-text" data-tooltip="{{system.details.background}}" data-placeholder="{{ localize 'DND5E.Background' }}">{{#if labels.background}}{{labels.background}}{{else}}{{system.details.background}}{{/if}}</span>
+                        <span class="origin-summary-text" data-tooltip="{{system.details.drive}}" data-placeholder="{{ localize 'DND5E.drive' }}">{{system.details.drive}}</span>
+						<span class="origin-summary-text" data-tooltip="{{system.details.backstory}}" data-placeholder="{{ localize 'DND5E.Backstory' }}">{{#if labels.backstory}}{{labels.backstory}}{{else}}{{system.details.backstory}}{{/if}}</span>
 						<span class="origin-summary-text" data-tooltip="{{system.details.alignment}}" data-placeholder="{{ localize 'DND5E.Alignment' }}">{{system.details.alignment}}</span>
 					</li>
 					<li class="proficiency">
@@ -450,7 +450,7 @@
 								{{editor system.details.appearance target="system.details.appearance" button=true editable=editable engine="prosemirror" collaborate=false}}
 							</article>
 							<article class="biography-notes">
-								<div class="section-titles">{{ localize "DND5E.Background" }}/{{ localize "DND5E.Biography" }}</div>
+								<div class="section-titles">{{ localize "DND5E.Backstory" }}/{{ localize "DND5E.Biography" }}</div>
 								{{editor biographyHTML target="system.details.biography.value" button=true editable=editable engine="prosemirror" collaborate=false}}
 							</article>
 						</div>

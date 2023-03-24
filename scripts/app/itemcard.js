@@ -186,7 +186,7 @@ export const dsrpgItemCard = function (html, actor) {
 
 		infoCard.clone().appendTo(infoContainerContent);
 
-		let infoBackground = infoContainer.find(".item-info-container-background");
+		let infoBackstory = infoContainer.find(".item-info-container-backstory");
 		let infoDescription = infoContainerContent.find(".info-card-description");
 		let props = $(`<div class="item-properties"></div>`);
 
@@ -195,7 +195,7 @@ export const dsrpgItemCard = function (html, actor) {
 		chatData.properties.forEach((p) => props.append(`<span class="tag">${p}</span>`));
 		infoContainerContent.find(".info-card .description-wrap").after(props);
 
-		infoBackground.hide();
+		infoBackstory.hide();
 
 		let innerScrollHeight = infoDescription[0].scrollHeight;
 
@@ -205,7 +205,7 @@ export const dsrpgItemCard = function (html, actor) {
 	}
 
 	function removeCard() {
-		html.find(".item-info-container-background").show();
+		html.find(".item-info-container-backstory").show();
 		infoContainerContent.find(".info-card").remove();
 	}
 

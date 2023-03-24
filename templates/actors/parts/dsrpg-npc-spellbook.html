@@ -41,7 +41,7 @@
       {{#with (lookup @root.itemContext item.id) as |ctx|}}
         <li class="item {{~#if item.system.preparation.prepared}} prepared{{/if}} {{#if (eq item.system.preparation.mode 'always')}} alwaysprepared{{/if}} {{#if (eq item.system.preparation.mode 'pact')}} pact{{/if}} {{#if (eq item.system.preparation.mode 'atwill')}} atwill{{/if}} {{#if (eq item.system.preparation.mode 'innate')}} innate{{/if}}" data-item-id="{{item.id}}">
           <div class="item-name rollable">
-            <div class="item-image" style="background-image: url('{{item.img}}')">
+            <div class="item-image" style="backstory-image: url('{{item.img}}')">
               <i class="fa fa-dice-d20"></i>
             </div>
             <h4>
