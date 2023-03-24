@@ -29,7 +29,7 @@
                     <i class="fas fa-check"></i>
                     <input type="text" name="flags.ds-rpg-extension.death.success" data-dtype="Number" placeholder="0"
                     value="{{actor.flags.ds-rpg-extension.death.success}}" maxlength="1" data-tooltip="{{ localize 'DND5E.DeathSave' }}">
-                    <div class="death-save rollable has-note death-save-tidy">  <!-- data-action="rollDeathSave" -->
+                    <div class="death-save rollable has-note death-save-dsrpg">  <!-- data-action="rollDeathSave" -->
                         <!-- <div class="note">{{ localize "DND5E.DeathSave" }}</div> -->
                         <i class="fas fa-skull"></i>
                     </div>
@@ -127,7 +127,7 @@
           placeholder="+{{ localize 'DND5E.Max' }}" value="{{#if (eq hp.tempmax 0)}}{{else}}{{hp.tempmax}}{{/if}}"
           title="{{localize 'DND5E.HitPointsTempMax'}}" data-dtype="Number" maxlength="5">
           {{#if @root.allowHpConfigOverride}}
-          <a class="config-button hit-points-tidy" data-tooltip="{{localize 'DND5E.HitPointsConfig'}}">
+          <a class="config-button hit-points-dsrpg" data-tooltip="{{localize 'DND5E.HitPointsConfig'}}">
 						<i class="fas fa-cog"></i>
 					</a>
           {{else}}
@@ -186,7 +186,7 @@
           </li>
           {{#if owner}}
           <li class="origin-summary-config">
-            <a class="config-button origin-summary-tidy" data-tooltip="{{localize 'DSRPG.OriginSummaryConfig'}}">
+            <a class="config-button origin-summary-dsrpg" data-tooltip="{{localize 'DSRPG.OriginSummaryConfig'}}">
                 <i class="fas fa-cog"></i>
             </a>
           </li>

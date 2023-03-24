@@ -19,8 +19,8 @@ import { debug, error } from "./app/logger-util.js";
 
 /**
  * An Actor sheet for NPC type characters in the D&D5E system.
- * Extends the base ActorSheet5e class.
- * @type {ActorSheet5eNPC}
+ * Extends the base ActorSheedsrpg class.
+ * @type {ActorSheedsrpgNPC}
  */
 
 let npcScrollPos = 0;
@@ -30,7 +30,7 @@ Handlebars.registerHelper("check", function (value, comparator) {
 	return value === comparator ? "No content" : value;
 });
 
-export default class DSRPGNPC extends dnd5e.applications.actor.ActorSheet5eNPC {
+export default class DSRPGNPC extends dnd5e.applications.actor.ActorSheedsrpgNPC {
 	/**
 	 * Define default rendering options for the NPC sheet
 	 * @return {Object}
@@ -500,7 +500,7 @@ export default class DSRPGNPC extends dnd5e.applications.actor.ActorSheet5eNPC {
 		// Short and Long Rest
 		html.find(".short-rest").click(this._onShortRest.bind(this));
 		html.find(".long-rest").click(this._onLongRest.bind(this));
-		html.find(".death-save-tidy").click(this._rollDeathSave.bind(this));
+		html.find(".death-save-dsrpg").click(this._rollDeathSave.bind(this));
 	}
 
 	/* -------------------------------------------- */

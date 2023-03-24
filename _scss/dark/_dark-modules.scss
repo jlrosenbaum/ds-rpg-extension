@@ -1,0 +1,173 @@
+.disable {
+	/* ------------------------------------ */
+	/*   Support Better Rolls / Minor QOL   */
+	/* ------------------------------------ */
+
+	.dsrpgDark .dsrpg.sheet.actor .items-list .item-summary .item-buttons .tag button:hover {
+		background: var(--dsrpg-darkmode-primary-accent);
+	}
+
+	/* ------------------------ */
+	/* Support Dynamic Effects  */
+	/* ------------------------ */
+	.dsrpgDark .dnd5e.sheet.item .effect-header:first-child,
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-name,
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-mode,
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-value,
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-header .effect-controls {
+		color: var(--dsrpg-darkmode-primary-color);
+		font-weight: 400;
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-header,
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-header .effect-name,
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-header .effect-controls {
+		color: var(--dsrpg-darkmode-tertiary-color);
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect {
+		background: var(--dsrpg-darkmode-faint-color);
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect .effect-name {
+		cursor: default;
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-controls .effect-create {
+		background: var(--dsrpg-darkmode-light-color);
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-controls .effect-create:hover {
+		background: var(--dsrpg-darkmode-primary-accent);
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-controls .effect-edit:hover {
+		color: var(--dsrpg-darkmode-primary-accent);
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-controls .effect-delete {
+		color: var(--dsrpg-danger-500);
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-controls .effect-delete:hover {
+		color: var(--dsrpg-danger-700);
+	}
+	/* ------------------------ */
+	/*    Support Magic Items   */
+	/* ------------------------ */
+	.dsrpgDark .dsrpg.sheet.actor .magic-items-feats-content .spellbook-filters.magic-items-head,
+	.dsrpgDark .dsrpg.sheet.actor .magic-items-spells-content .spellbook-filters.magic-items-head {
+		border-color: var(--dsrpg-darkmode-light-color);
+	}
+
+	.dsrpgDark .dsrpg.sheet.actor .magic-items-feats-content .magic-item div,
+	.dsrpgDark .dsrpg.sheet.actor .magic-items-spells-content .magic-item div {
+		border-color: var(--dsrpg-darkmode-faint-color);
+	}
+
+	.dsrpgDark .dnd5e.sheet.actor .spell-rechargeable,
+	.dsrpgDark .dnd5e.sheet.actor .spell-level,
+	.dsrpgDark .dnd5e.sheet.actor .spell-consumption,
+	.dsrpgDark .dnd5e.sheet.actor .spell-upcast {
+		color: var(--dsrpg-darkmode-primary-color);
+		font-weight: 300;
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-header .effect-mode,
+	.dsrpgDark .dnd5e.sheet.item .dynamiceffects-effect-list .effect-header .effect-value {
+		color: var(--dsrpg-darkmode-primary-color);
+	}
+
+	.dsrpgDark .dsrpg.sheet.actor .magic-items-feats-content .item-name:hover .magic-item-image,
+	.dsrpgDark .dsrpg.sheet.actor .magic-items-spells-content .item-name:hover .magic-item-image {
+		background-image: url("../../images/d20-444.svg") !important;
+	}
+
+	.dsrpgDark .dsrpg.sheet.actor .magic-items-feats-content .item-name:hover .magic-item-image:hover,
+	.dsrpgDark .dsrpg.sheet.actor .magic-items-spells-content .item-name:hover .magic-item-image:hover {
+		background-image: url("../../images/d20-highlight-green.svg") !important;
+	}
+
+	/* Magic Item Sheet */
+
+	.dsrpgDark .dnd5e.sheet.item .sheet-body .tab.magic-items label {
+		color: var(--dsrpg-darkmode-primary-color);
+		font-weight: 300;
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .magic-items-content input[type="text"],
+	.dsrpgDark .dnd5e.sheet.item .magic-items-content select {
+		border: none !important;
+		background: var(--dsrpg-darkmode-faint-color);
+		color: var(--dsrpg-darkmode-primary-color);
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .magic-items-content input[type="text"]:hover,
+	.dsrpgDark .dnd5e.sheet.item .magic-items-content select:hover,
+	.dsrpgDark .dnd5e.sheet.item .magic-items-content select:focus {
+		border: none !important;
+		box-shadow: 0 0 0 1px var(--dsrpg-darkmode-primary-accent);
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .item:not(.items-header) {
+		background: var(--dsrpg-darkmode-faint-color);
+		color: var(--dsrpg-darkmode-primary-color);
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .item .spell-level,
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .item .spell-consumption,
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .item .spell-upcast,
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .item .spell-cost {
+		color: var(--dsrpg-darkmode-primary-color);
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .items-header:first-child,
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .items-header .item-name,
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .items-header .spell-level-head,
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .items-header .spell-consumption-head,
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .items-header .spell-upcast-head,
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .items-header .spell-cost-head,
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .items-header .spell-constrols-head {
+		color: var(--dsrpg-darkmode-tertiary-color);
+		font-weight: 400;
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .item-controls a {
+		color: var(--dsrpg-danger-500);
+	}
+
+	.dsrpgDark .dnd5e.sheet.item .magic-item-list .item-controls a:hover {
+		color: var(--dsrpg-danger-700);
+	}
+
+	/* ----------------------------- */
+	/*    Support Skill Customizer   */
+	/* ----------------------------- */
+
+	.dsrpgDark .dsrpg.sheet.actor .skills-list > .skill > .skill-ability-select,
+	.dsrpgDark .dsrpg.sheet.actor .skills-list > .skill > .skill-cust-bonus {
+		color: var(--dsrpg-darkmode-primary-color);
+	}
+
+	.dsrpgDark .dsrpg.sheet.actor .skills-list > .skill > .skill-ability-select:hover,
+	.dsrpgDark .dsrpg.sheet.actor .skills-list > .skill > .skill-ability-select:focus {
+		background: var(--dsrpg-darkmode-primary-accent);
+		color: var(--dsrpg-darkmode-primary-color);
+		box-shadow: 0 0 0 1px var(--dsrpg-darkmode-primary-accent);
+	}
+
+	.dsrpgDark .dsrpg.sheet.actor .skills-list > .skill > .skill-ability-select:hover option,
+	.dsrpgDark .dsrpg.sheet.actor .skills-list > .skill > .skill-ability-select:focus option {
+		background: #fff;
+		color: #121212;
+	}
+
+	.dsrpgDark .dsrpg.sheet.actor .skills-list > .skill > .skill-cust-bonus {
+		box-shadow: 0 0 0 1px var(--dsrpg-darkmode-tertiary-color) inset;
+	}
+
+	.dsrpgDark .dsrpg.sheet.actor .skills-list > .skill > .skill-cust-bonus:hover,
+	.dsrpgDark .dsrpg.sheet.actor .skills-list > .skill > .skill-cust-bonus:focus {
+		box-shadow: 0 0 0 1px var(--dsrpg-darkmode-primary-accent) inset;
+	}
+}

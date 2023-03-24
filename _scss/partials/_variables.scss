@@ -1,0 +1,97 @@
+:root {
+	--dsrpg-modesto: "Modesto Condensed", "Palatino Linotype", serif;
+	--dsrpg-signika: "Signika", sans-serif;
+
+	//font colors
+	--dsrpg-primary-font: rgba(0, 0, 0, 0.9);
+
+	--dsrpg-background: rgba(236, 233, 223, 1);
+
+	--dsrpg-faintest-color: rgba(0, 0, 0, 0.05);
+	--dsrpg-faint-color: rgba(0, 0, 0, 0.1);
+	--dsrpg-light-color: rgba(0, 0, 0, 0.25);
+	--dsrpg-primary-color: rgba(0, 0, 0, 0.9);
+	--dsrpg-secondary-color: rgba(0, 0, 0, 0.65);
+	--dsrpg-tertiary-color: rgba(0, 0, 0, 0.4);
+	--dsrpg-primary-accent: rgba(255, 100, 0, 1);
+	--dsrpg-white: rgba(255, 255, 255, 1);
+	--dsrpg-faint-white: rgba(255, 255, 255, 0.2);
+	--dsrpg-linked-accent: rgba(0, 255, 0, 0.75);
+	--dsrpg-unlinked-accent: rgba(255, 0, 0, 0.75);
+	--dsrpg-linked-light: rgba(0, 255, 0, 0.4);
+	--dsrpg-unlinked-light: rgba(255, 0, 0, 0.4);
+	--dsrpg-safe-accent: rgba(0, 150, 100, 0.6);
+	--dsrpg-unsafe-accent: rgba(255, 0, 0, 0.6);
+
+	// sheet header
+	--dsrpg-header-background: rgba(255, 255, 255, 0.2);
+	--dsrpg-header-border: rgba(0, 0, 0, 0.25);
+
+	//items
+	--dsrpg-stat-font: rgba(236, 233, 223, 1);
+	--dsrpg-prepareable: rgba(119, 136, 153, 1);
+	--dsrpg-equipped: rgba(50, 205, 50, 0.3);
+	--dsrpg-equipped-outline: rgba(50, 205, 50, 1);
+	--dsrpg-equipped-accent: rgba(173, 255, 47, 1);
+	--dsrpg-prepared: rgba(50, 205, 50, 0.3);
+	--dsrpg-prepared-outline: rgba(50, 205, 50, 1);
+	--dsrpg-prepared-accent: rgba(173, 255, 47, 1);
+	--dsrpg-pact: rgba(250, 0, 180, 0.3);
+	--dsrpg-pact-outline: rgba(250, 50, 213, 1);
+	--dsrpg-pact-accent: rgba(198, 119, 193, 1);
+	--dsrpg-atwill: rgba(226, 246, 4, 0.3);
+	--dsrpg-atwill-outline: rgba(163, 165, 50, 1);
+	--dsrpg-atwill-accent: rgba(255, 242, 0, 1);
+	--dsrpg-innate: rgba(255, 0, 0, 0.3);
+	--dsrpg-innate-outline: rgba(231, 23, 23, 1);
+	--dsrpg-innate-accent: rgba(195, 69, 69, 1);
+	--dsrpg-alwaysprepared: rgba(0, 0, 255, 0.15);
+	--dsrpg-alwaysprepared-outline: rgba(65, 105, 225, 1);
+	--dsrpg-alwaysprepared-accent: rgba(0, 191, 255, 1);
+
+	--dsrpg-magic-accent: rgba(255, 255, 0, 1);
+	--dsrpg-faint-magic-accent: rgba(255, 255, 0, 0.6);
+	--dsrpg-magic-outline: rgba(175, 255, 47, 1);
+	--dsrpg-attunement-required: rgba(205, 92, 92, 1);
+	--dsrpg-icon-attuned: rgba(0, 0, 0, 0.4);
+
+	--dsrpg-xp-bar: rgba(94, 225, 146, 1);
+	--dsrpg-encumbrance-bar: rgba(108, 138, 165, 1);
+	--dsrpg-encumbrance-bar-outline: rgba(205, 228, 255, 1);
+	--dsrpg-encumbrance-outline: rgba(0, 0, 0, 0.9);
+
+	--dsrpg-warning-accent: rgba(255, 0, 0, 0.6);
+
+	//portrait icons
+	--dsrpg-icon-background: rgba(236, 233, 223, 1);
+	--dsrpg-icon-shadow: rgba(0, 0, 0, 0.4);
+	--dsrpg-icon-outline: rgba(0, 0, 0, 0.4);
+	--dsrpg-icon-font: rgba(0, 0, 0, 0.4);
+	--dsrpg-exhaustion-font: rgba(0, 0, 0, 0.4);
+	--dsrpg-icon-hover: rgba(0, 0, 0, 0.9);
+
+	--dsrpg-pc-border: 0px;
+	--dsrpg-npc-border: 0px;
+	--dsrpg-vehicle-border: 0px;
+
+	//notes
+	--dsrpg-note-background: rgba(0, 0, 0, 0.9);
+
+	//exhaustion
+	--dsrpg-exhaustion-lvl1: rgba(255, 230, 0, 1);
+	--dsrpg-exhaustion-lvl2: rgba(255, 130, 0, 1);
+	--dsrpg-exhaustion-lvl3: rgba(255, 50, 0, 1);
+
+	--dsrpg-ability-accent: darkslategrey;
+	// context menu
+	--dsrpg-context-outline: rgba(0, 0, 0, 0.4);
+	--dsrpg-context-shadow: rgba(0, 0, 0, 0.65);
+
+	// item sheets
+	--dsrpg-check-default: url("../images/check-dark-unchecked.svg");
+	--dsrpg-check-checked: url("../images/check-dark-checked.svg");
+	--dsrpg-checkbox-font: rgba(0, 0, 0, 0.9);
+	--dsrpg-checkbox-outline: rgba(150, 150, 150, 1);
+	--dsrpg-checkbox-unchecked: #d8d7d1;
+	--dsrpg-checkbox-checked: rgba(0, 255, 0, 0.3);
+}

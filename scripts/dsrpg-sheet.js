@@ -30,7 +30,7 @@ import { dsrpgHBEnableUpcastFreeSpell } from "./app/dsrpg-hb-upcast-free-spell.j
 
 let position = 0;
 
-export class DSRPGSheet extends dnd5e.applications.actor.ActorSheet5eCharacter {
+export class DSRPGSheet extends dnd5e.applications.actor.ActorSheedsrpgCharacter {
 	get template() {
 		if (!game.user.isGM && this.actor.limited && !game.settings.get(CONSTANTS.MODULE_ID, "expandedSheetEnabled"))
 			return "modules/ds-rpg-extension/templates/actors/dsrpg-sheet-ltd.html";
@@ -637,7 +637,7 @@ async function abbreviateCurrency(app, html, data) {
 /**
  *  transform DAE formulas for maxPreparesSpells
  */
-async function tidyCustomEffect(actor, changes) {
+async function dsrpgCustomEffect(actor, changes) {
 	const changeMaxPreparedList = changes.find((c) => {
 		return c.key === "flags.ds-rpg-extension.maxPreparedSpells";
 	});
@@ -963,7 +963,7 @@ Hooks.on("applyActiveEffects", (activeEffect, _config, options) => {
 		return;
 	}
 	const changes = _config.changes;
-	tidyCustomEffect(activeEffect?.parent, changes);
+	dsrpgCustomEffect(activeEffect?.parent, changes);
 });
 
 /**
@@ -974,7 +974,7 @@ Hooks.on("createActiveEffect", (activeEffect, _config, options) => {
 		return;
 	}
 	const changes = _config.changes;
-	tidyCustomEffect(activeEffect?.parent, changes);
+	dsrpgCustomEffect(activeEffect?.parent, changes);
 });
 
 /**
@@ -985,7 +985,7 @@ Hooks.on("updateActiveEffect", (activeEffect, _config, options) => {
 		return;
 	}
 	const changes = _config.changes;
-	tidyCustomEffect(activeEffect?.parent, changes);
+	dsrpgCustomEffect(activeEffect?.parent, changes);
 });
 
 /**
@@ -996,7 +996,7 @@ Hooks.on("deleteActiveEffect", (activeEffect, _config, options) => {
 		return;
 	}
 	const changes = _config.changes;
-	tidyCustomEffect(activeEffect?.parent, changes);
+	dsrpgCustomEffect(activeEffect?.parent, changes);
 });
 
 Hooks.on("renderDSRPGSheet", (app, html, data) => {

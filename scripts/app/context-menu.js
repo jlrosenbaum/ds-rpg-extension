@@ -182,7 +182,7 @@ const _getAdvancementContextMenuOptions = function (html) {
 
 /**
  * Prepare an array of context menu options which are available for owned ActiveEffect documents.
- * @param {ActiveEffect5e} effect         The ActiveEffect for which the context menu is activated
+ * @param {ActiveEffecdsrpg} effect         The ActiveEffect for which the context menu is activated
  * @returns {ContextMenuEntry[]}          An array of context menu options offered for the ActiveEffect
  * @protected
  */

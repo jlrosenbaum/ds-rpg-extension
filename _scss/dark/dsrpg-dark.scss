@@ -1,0 +1,181 @@
+:root.dsrpgDark {
+	// font color
+	--dsrpg-primary-font: rgba(255, 255, 255, 0.8);
+
+	--dsrpg-background: rgba(30, 30, 30, 1);
+
+	--dsrpg-white: rgba(0, 0, 0, 1);
+	--dsrpg-primary-color: rgba(255, 255, 255, 0.8);
+	--dsrpg-secondary-color: rgba(255, 255, 255, 0.65);
+	--dsrpg-tertiary-color: rgba(255, 255, 255, 0.4);
+	--dsrpg-light-color: rgba(255, 255, 255, 0.25);
+	--dsrpg-faint-color: rgba(255, 255, 255, 0.1);
+	--dsrpg-faintest-color: rgba(255, 255, 255, 0.05);
+
+	--dsrpg-ability-accent: darkslategrey;
+
+	// sheet header
+	--dsrpg-header-background: rgba(255, 255, 255, 0.05);
+	--dsrpg-header-border: rgba(255, 255, 255, 0.25);
+
+	// icons
+	// --dsrpg-primary-accent: #48BB78;
+	--dsrpg-primary-accent: rgba(255, 100, 0, 1);
+	--dsrpg-equipped: rgba(0, 250, 180, 0.3);
+	--dsrpg-prepared: rgba(0, 250, 180, 0.3);
+	--dsrpg-pact: rgba(250, 0, 180, 0.3);
+	--dsrpg-atwill: rgba(226, 246, 4, 0.3);
+	--dsrpg-innate: rgba(255, 0, 0, 0.3);
+	--dsrpg-alwaysprepared: rgba(0, 100, 255, 0.3);
+
+	//portrait icons
+	--dsrpg-icon-background: rgba(30, 30, 30, 1);
+	--dsrpg-icon-shadow: rgba(0, 0, 0, 0.4);
+	--dsrpg-icon-outline: rgba(0, 0, 0, 0.4);
+	--dsrpg-icon-font: rgba(255, 255, 255, 0.4);
+	--dsrpg-icon-hover: rgba(255, 255, 255, 0.8);
+
+	--dsrpg-warning-accent: rgba(255, 30, 0, 0.65);
+
+	// item sheets
+	--dsrpg-check-default: url("../images/check-dark-unchecked.svg");
+	--dsrpg-check-checked: url("../images/check-light-checked.svg");
+	--dsrpg-checkbox-font: rgba(255, 255, 255, 0.8);
+	--dsrpg-checkbox-outline: rgba(50, 50, 50, 1);
+	--dsrpg-checkbox-unchecked: rgba(75, 75, 75, 1);
+	--dsrpg-checkbox-checked: rgba(0, 255, 0, 0.5);
+
+	.dsrpg {
+		--dsrpg-color-bg-option: rgba(100, 100, 100, 1);
+		.prosemirror {
+			--dsrpg-color-control-bg: rgba(50, 50, 50, 1);
+			--dsrpg-color-hover-bg: rgba(20, 20, 20, 1);
+		}
+	}
+} //.dsrpgDark
+
+.dsrpgDark {
+	.dsrpg.sheet.actor {
+		.ds-rpg-extension {
+			background-color: var(--dsrpg-background);
+		}
+
+		.spellcasting-ability {
+			background: var(--dsrpg-background);
+		}
+
+		.environment-label span {
+			color: var(--dsrpg-background);
+		}
+
+		select option {
+			color: var(--dsrpg-background);
+		}
+
+		#item-info-container {
+			background: var(--dsrpg-background);
+		}
+
+		a.entity-link,
+		a.content-link,
+		a.inline-roll {
+			color: var(--dsrpg-primary-font);
+			background: var(--dsrpg-faint-color);
+		}
+	}
+
+	.dsrpg.sheet.item {
+		.window-content {
+			color: var(--dsrpg-primary-font);
+
+			form {
+				background-color: var(--dsrpg-background);
+			}
+
+			form .hint {
+				color: var(--dsrpg-tertiary-color);
+			}
+		}
+
+		.tox .tox-toolbar-overlord button {
+			color: #222;
+		}
+
+		.tox-sidebar-wrap {
+			padding: 8px;
+			background: var(--dsrpg-secondary-color);
+		}
+
+		select option {
+			color: var(--dsrpg-primary-font);
+			background: var(--dsrpg-background);
+		}
+
+		a.content-link {
+			color: var(--dsrpg-primary-font);
+			background: var(--dsrpg-faint-color);
+		}
+
+		.tab.advancement .items-list {
+			.items-header div.item-checkmark {
+				flex: 0 0 44px;
+				color: var(--dsrpg-prepared);
+			}
+			.item .item-name {
+				.item-image {
+					filter: invert(1);
+				}
+			}
+		}
+
+		.tab.effects {
+			h3 {
+				border: none;
+			}
+		}
+
+		input {
+			color: var(--dsrpg-primary-font);
+
+			&::placeholder {
+				color: var(--dsrpg-tertiary-color);
+			}
+		}
+	}
+
+	.dsrpg.sheet.actor {
+		.tox-toolbar-overlord,
+		.tox-toolbar__primary {
+			background: #fff;
+			background-color: #fff;
+		}
+
+		.tox .tox-toolbar-overlord button {
+			color: #222;
+		}
+
+		.tox-sidebar-wrap {
+			padding: 8px;
+			background: var(--dsrpg-secondary-color);
+		}
+	}
+
+	.dsrpg.sheet .prosemirror menu {
+		button:hover {
+			background: rgba(100, 100, 100, 1);
+		}
+		.pm-dropdown {
+			background: rgba(100, 100, 100, 1);
+
+			ul {
+				background: rgba(100, 100, 100, 1);
+			}
+
+			li:hover {
+				background: rgba(50, 50, 50, 1);
+			}
+		}
+	}
+}
+
+@import "_dark-modules.scss";

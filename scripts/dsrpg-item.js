@@ -3,7 +3,7 @@ import { debug } from "./app/logger-util.js";
 import { dsrpgShowItemArt } from "./app/show-item-art.js";
 import { applySpellClassFilterItemSheet } from "./app/spellClassFilter.js";
 
-export class DSRPGItemSheet extends dnd5e.applications.item.ItemSheet5e {
+export class DSRPGItemSheet extends dnd5e.applications.item.ItemSheedsrpg {
 	static get defaultOptions() {
 		return mergeObject(super.defaultOptions, {
 			classes: ["dsrpg", "dnd5ebak", "sheet", "item"]

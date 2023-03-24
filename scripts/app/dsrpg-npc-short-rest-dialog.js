@@ -66,7 +66,7 @@ export default class ShortRestDialog extends Dialog {
 		super.activateListeners(html);
 		let btn = html.find("#roll-hd");
 		btn.click(this._onRollHitDie.bind(this));
-		btn.hide(); // Added for tidy
+		btn.hide(); // Added for dsrpg
 	}
 
 	/* -------------------------------------------- */

@@ -9,7 +9,7 @@ import { applyColorPickerCustomization } from "./app/color-picker.js";
 import CONSTANTS from "./app/constants.js";
 import { is_real_number } from "./app/helpers.js";
 
-export class DSRPGVehicle extends dnd5e.applications.actor.ActorSheet5eVehicle {
+export class DSRPGVehicle extends dnd5e.applications.actor.ActorSheedsrpgVehicle {
 	static get defaultOptions() {
 		let defaultTab =
 			game.settings.get(CONSTANTS.MODULE_ID, "defaultActionsTab") != "default"

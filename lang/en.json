@@ -139,8 +139,8 @@
 	"DSRPG.Settings.ColorPickerLabel": "Customize the color (It's advisable to install the module 'Color Settings')",
 
 	"DSRPG.Settings.SheetMenu": {
-		"name": "Tidy Sheet Settings",
-		"hint": "Customize your own version of Tidy",
+		"name": "DSRPG Sheet Settings",
+		"hint": "Customize your own version of DSRPG",
 		"label": "Sheet Settings",
 		"title": "DSRPG Sheet Settings"
 	},
@@ -350,7 +350,7 @@
 	},
 	"DSRPG.Settings.CustomExhaustionIcon": {
 		"name": "Custom exhaustion effect icon.",
-		"hint": "Set your custom exhaustion effect icon by providing an image url. Only available when Exhaustion Effect is set to \"tidy 5e\" (e. g.: modules/ds-rpg-extension/images/exhaustion.svg)."
+		"hint": "Set your custom exhaustion effect icon by providing an image url. Only available when Exhaustion Effect is set to \"dsrpg\" (e. g.: modules/ds-rpg-extension/images/exhaustion.svg)."
 	},
 	"DSRPG.Settings.CustomExhaustionEffect": {
 		"name": "Custom CUB exhaustion effect name.",
@@ -461,27 +461,27 @@
 	},
 	"DSRPG.Settings.LockMoneyChanges": {
 		"name": "Lock change money for non GM",
-		"hint": "This will lock up the money input pp, gp, ep, sp, cp on the tidy sheet for non GM player. All other module working with these fields are working just fine."
+		"hint": "This will lock up the money input pp, gp, ep, sp, cp on the dsrpg sheet for non GM player. All other module working with these fields are working just fine."
 	},
 	"DSRPG.Settings.LockExpChanges": {
 		"name": "Lock change experience for non GM",
-		"hint": "This will lock up the experience input on the tidy sheet for non GM player. All other module working with these fields are working just fine."
+		"hint": "This will lock up the experience input on the dsrpg sheet for non GM player. All other module working with these fields are working just fine."
 	},
 	"DSRPG.Settings.LockHpMaxChanges": {
 		"name": "Lock change hp max for non GM",
-		"hint": "This will lock up the hp max input on the tidy sheet for non GM player. All other module working with these fields are working just fine."
+		"hint": "This will lock up the hp max input on the dsrpg sheet for non GM player. All other module working with these fields are working just fine."
 	},
 	"DSRPG.Settings.LockLevelSelector": {
 		"name": "Lock level selector for non GM",
-		"hint": "Disable Level Dropdown on the tidy sheet under Features Tab or Offer Option to Lock PLayers out from changing it. All other module working with these fields are working just fine."
+		"hint": "Disable Level Dropdown on the dsrpg sheet under Features Tab or Offer Option to Lock PLayers out from changing it. All other module working with these fields are working just fine."
 	},
 	"DSRPG.Settings.LockConfigureSheet": {
 		"name": "Lock configure sheet for non GM",
-		"hint": "Disable and hide the button for configure sheet on the tidy sheet, to avoid players to use other sheet. All other module working with these fields are working just fine."
+		"hint": "Disable and hide the button for configure sheet on the dsrpg sheet, to avoid players to use other sheet. All other module working with these fields are working just fine."
 	},
 	"DSRPG.Settings.LockItemQuantity": {
 		"name": "Lock item quantity for non GM",
-		"hint": "Enable this to lock the input quantity on the inventory and item sheet on the tidy sheet. All other module working with these fields are working just fine."
+		"hint": "Enable this to lock the input quantity on the inventory and item sheet on the dsrpg sheet. All other module working with these fields are working just fine."
 	},
 
 	"DSRPG.Settings.ColorPickerEnabled": {
