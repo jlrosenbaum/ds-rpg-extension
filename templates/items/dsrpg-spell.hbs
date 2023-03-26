@@ -1,0 +1,170 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+	<div class="ds-rpg-extension limited">
+		{{!-- Item Sheet Header --}}
+        <header class="sheet-header flexrow">
+            <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img"/>
+
+            <div class="header-details flexrow">
+                <h1 class="charname">
+                    <input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'DND5E.SpellName' }}"/>
+                </h1>
+
+                <div class="item-subtitle">
+                    <h4 class="item-type">{{itemType}}</h4>
+                    <span class="item-status">{{itemStatus}}</span>
+                </div>
+
+                <ul class="summary flexrow">
+                    <li>
+                        {{labels.level}}
+                    </li>
+                    <li>
+                        {{DSRPG.SpellClass}}
+                    </li>
+                    <li>
+                        <input type="text" name="system.source" value="{{system.source}}" placeholder="{{ localize 'DND5E.Source' }}"/>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        {{!-- Item Sheet Navigation --}}
+        <nav class="sheet-navigation tabs" data-group="primary">
+            <a class="item active" data-tab="description" data-group="primary">{{ localize "DND5E.Description" }}</a>
+            <a class="item" data-tab="details" data-group="primary">{{ localize "DND5E.Details" }}</a>
+            <a class="item" data-tab="effects" data-group="primary">{{ localize "DND5E.Effects" }}</a>
+        </nav>
+
+		{{!-- Spell Sheet Body --}}
+		<section class="sheet-body">
+			{{!-- Description Tab --}}
+            <div class="tab flexrow active" data-group="primary" data-tab="description">
+                <div class="item-properties">
+                    {{#if isPhysical}}
+                    <div class="form-group">
+                        <label>{{ localize "DND5E.Quantity" }}</label>
+                        {{numberInput system.quantity name="system.quantity"}}
+                    </div>
+
+                    <div class="form-group">
+                        <label>{{ localize "DND5E.Weight" }}</label>
+                        {{numberInput system.weight name="system.weight"}}
+                    </div>
+
+                    <div class="form-group">
+                        <label>{{ localize "DND5E.Price" }}</label>
+                        {{numberInput system.price.value name="system.price.value"}}
+                        <select name="system.price.denomination">
+                            {{selectOptions config.currencies selected=system.price.denomination labelAttr="abbreviation"}}
+                        </select>
+                    </div>
+                    {{/if}}
+
+                    {{#if (or labels.toHit labels.derivedDamage)}}
+                    <h4 class="properties-header">{{localize "DND5E.Attack"}}/{{localize "DND5E.Damage"}}</h4>
+                    <ol class="properties-list">
+                        {{#if labels.save}}
+                        <li>
+                            {{labels.save}}
+                        </li>
+                        {{/if}}
+
+                        {{#if labels.toHit}}
+                        <li>
+                            {{labels.toHit}} {{localize "DND5E.ToHit"}}
+                        </li>
+                        {{/if}}
+
+                        {{#each labels.derivedDamage}}
+                        <li>
+                            {{label}}
+                        </li>
+                        {{/each}}
+                    </ol>
+                    {{/if}}
+
+                    {{#if itemProperties.length}}
+                    <h4 class="properties-header">{{localize "DND5E.Properties"}}</h4>
+                    <ol class="properties-list">
+                        {{#each itemProperties}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                    {{/if}}
+                </div>
+
+                <article class="spell-description">
+                    {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+                </article>
+            </div>
+
+            {{!-- Details Tab --}}
+            <div class="tab details" data-group="primary" data-tab="details">
+                <h3 class="form-header">{{ localize "DND5E.SpellDetails" }}</h3>
+
+                {{!-- Spell Level --}}
+                <div class="form-group">
+                    <label>{{ localize "DSRPG.SpellLevel" }}</label>
+                    <select name="system.level" data-dtype="Number">
+                        <option value="1">{{ localize "DSRPG.SpellLevel1" }}</option>
+                        <option value="2">{{ localize "DSRPG.SpellLevel2" }}</option>
+                        <option value="3">{{ localize "DSRPG.SpellLevel3" }}</option>
+                        <option value="4">{{ localize "DSRPG.SpellLevel4" }}</option>
+                        <option value="5">{{ localize "DSRPG.SpellLevel5" }}</option>
+                        <option value="6">{{ localize "DSRPG.SpellLevel6" }}</option>
+                        <option value="7">{{ localize "DSRPG.SpellLevel7" }}</option>
+                        <option value="8">{{ localize "DSRPG.SpellLevel8" }}</option>
+                        <option value="9">{{ localize "DSRPG.SpellLevel9" }}</option>
+                        <option value="10">{{ localize "DSRPG.SpellLevel10" }}</option>
+                        <option value="11">{{ localize "DSRPG.SpellLevel11" }}</option>
+                        <option value="12">{{ localize "DSRPG.SpellLevel12" }}</option>
+                        <option value="13">{{ localize "DSRPG.SpellLevel13" }}</option>
+                        <option value="14">{{ localize "DSRPG.SpellLevel14" }}</option>
+                        <option value="15">{{ localize "DSRPG.SpellLevel15" }}</option>
+                        <option value="16">{{ localize "DSRPG.SpellLevel16" }}</option>
+                        <option value="17">{{ localize "DSRPG.SpellLevel17" }}</option>
+                        <option value="18">{{ localize "DSRPG.SpellLevel18" }}</option>
+                        <option value="19">{{ localize "DSRPG.SpellLevel19" }}</option>
+                        <option value="20">{{ localize "DSRPG.SpellLevel20" }}</option>
+                    </select>
+                </div>
+
+                {{!-- Spell School --}}
+                <div class="form-group">
+                    <label>{{ localize "DND5E.SpellSchool" }}</label>
+                    <select name="system.school">
+                        <option value="pyro">{{ localize "DSRPG.SchoolPyromancy" }}</option>
+                        <option value="sorc">{{ localize "DSRPG.SchoolSorcery" }}</option>
+                        <option value="mirc">{{ localize "DSRPG.SchoolMiracle" }}</option> 
+                    </select>
+                </div>
+
+                {{!-- Spell Casts --}}
+                <div class="form-group">
+                    <label>{{ localize "DSRPG.SpellCasts" }}</label>
+                    <input type="text" id={{ localize "DSRPG.SpellCasts" }} name={{ localize "DSRPG.SpellCasts" }} value=0><br><br>
+                </div>
+
+                {{!-- Spell Cast Time --}}
+                <div class="form-group">
+                    <label>{{ localize "DSRPG.SpellCastTime" }}</label>
+                    <select name={{ localize "DSRPG.SpellCastTime"}}>
+                        <option value="action">{{ localize "DSRPG.SpellCastTimeAct" }}</option>
+                        <option value="bonus">{{ localize "DSRPG.SpellCastTimeBon" }}</option>
+                        <option value="reaction">{{ localize "DSRPG.SpellCastTimeRea" }}</option>
+                    </select>
+                </div>
+
+                {{!-- Spell Duration --}}
+                <div class="form-group">
+                    
+                </div>
+            </div>
+
+            {{!-- Effects Tab --}}
+            <div class="tab effects flexcol" data-group="primary" data-tab="effects">
+                {{> "dnd5e.active-effects"}}
+            </div>
+		</section>
+	</div>
+</form>

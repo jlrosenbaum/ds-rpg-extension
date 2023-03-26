@@ -19,8 +19,8 @@ import { debug, error } from "./app/logger-util.js";
 
 /**
  * An Actor sheet for NPC type characters in the D&D5E system.
- * Extends the base ActorSheedsrpg class.
- * @type {ActorSheedsrpgNPC}
+ * Extends the base ActorSheet5eNPC  class.
+ * @type {ActorSheet5eNPC}
  */
 
 let npcScrollPos = 0;
@@ -30,7 +30,7 @@ Handlebars.registerHelper("check", function (value, comparator) {
 	return value === comparator ? "No content" : value;
 });
 
-export default class DSRPGNPC extends dnd5e.applications.actor.ActorSheedsrpgNPC {
+export default class DSRPGNPC extends dnd5e.applications.actor.ActorSheet5eNPC   {
 	/**
 	 * Define default rendering options for the NPC sheet
 	 * @return {Object}

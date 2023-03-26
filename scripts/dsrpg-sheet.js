@@ -30,7 +30,7 @@ import { dsrpgHBEnableUpcastFreeSpell } from "./app/dsrpg-hb-upcast-free-spell.j
 
 let position = 0;
 
-export class DSRPGSheet extends dnd5e.applications.actor.ActorSheedsrpgCharacter {
+export class DSRPGSheet extends dnd5e.applications.actor.ActorSheet5eCharacter {
 	get template() {
 		if (!game.user.isGM && this.actor.limited && !game.settings.get(CONSTANTS.MODULE_ID, "expandedSheetEnabled"))
 			return "modules/ds-rpg-extension/templates/actors/dsrpg-sheet-ltd.html";
@@ -944,7 +944,7 @@ async function _onQuantityChange(event) {
 
 /* -------------------------------------------- */
 
-// Register DSRPG Sheet and make default character sheet
+// Register DSRPG Sheet and make default character sheets
 Actors.registerSheet("dnd5e", DSRPGSheet, {
 	types: ["character"],
 	makeDefault: true
@@ -953,6 +953,7 @@ Actors.registerSheet("dnd5e", DSRPGSheet, {
 // Preload dsrpg Handlebars Templates
 Hooks.once("init", () => {
 	preloadDSRPGHandlebarsTemplates();
+
 	//
 	// init user settings menu
 	DSRPGUserSettings.init();

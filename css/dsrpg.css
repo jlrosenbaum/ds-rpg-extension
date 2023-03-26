@@ -4204,6 +4204,13 @@
 	width: 100%;
 	height: 100%;
 }
+.prosemirror .editor-container .editor-content {
+	outline: 0 solid transparent;
+	height: unset;
+	position: absolute;
+	padding-right: 0.5rem;
+	scrollbar-width: thin;
+  }
 .dsrpg.sheet.actor .editor ul,
 .dsrpg.sheet.actor .editor ol {
 	list-style: outside;
@@ -5333,6 +5340,7 @@ form .form-group.spell-lvl-btn .form-fields .spell-lvl-btn__label .available-slo
 	padding: 1rem;
 	padding-right: 0.25rem;
 	overflow: hidden;
+	height: 100%;
 }
 .dsrpg.sheet.item .sheet-body .item-properties {
 	-webkit-box-flex: 0;
